@@ -1,0 +1,12 @@
+/source/SalesSystemAPi/app/SalesSystemApi
+/source/SalesSystemAPi/app/appsettings.Development.json
+/source/SalesSystemAPi/app/appsettings.json
+/source/SalesSystemAPi/app/SalesSystemApi.dll
+/source/SalesSystemAPi/app/SalesSystemApi.deps.json
+/source/SalesSystemAPi/app/SalesSystemApi.runtimeconfig.json
+/source/SalesSystemAPi/app/SalesSystemApi.pdb
+/source/SalesSystemAPi/app/Microsoft.AspNetCore.OpenApi.dll
+/source/SalesSystemAPi/app/Microsoft.OpenApi.dll
+/source/SalesSystemAPi/app/Swashbuckle.AspNetCore.Swagger.dll
+/source/SalesSystemAPi/app/Swashbuckle.AspNetCore.SwaggerGen.dll
+/source/SalesSystemAPi/app/Swashbuckle.AspNetCore.SwaggerUI.dll

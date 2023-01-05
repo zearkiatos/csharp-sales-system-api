@@ -1,0 +1,21 @@
+version: "3.9"
+
+services:
+  mssql:
+    build:
+      context: .
+      dockerfile: mssql.Dockerfile
+    container_name: mssql
+    env_file:
+      - mssql.env
+    ports:
+      - "1434:1433"
+    volumes:
+      - "./data/mssql_volume:/var/opt/mssql"
+    networks:
+      devnetwork:
+networks:
+  devnetwork:
+    driver: bridge
+
+
