@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "/source/SalesSystemAPi/SalesSystemApi.csproj": {}
+    "/Users/pedrocapriles/Documents/projects/sales-system/csharp-sales-system-api/SalesSystemApi/SalesSystemApi.csproj": {}
   },
   "projects": {
-    "/source/SalesSystemAPi/SalesSystemApi.csproj": {
+    "/Users/pedrocapriles/Documents/projects/sales-system/csharp-sales-system-api/SalesSystemApi/SalesSystemApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/source/SalesSystemAPi/SalesSystemApi.csproj",
+        "projectUniqueName": "/Users/pedrocapriles/Documents/projects/sales-system/csharp-sales-system-api/SalesSystemApi/SalesSystemApi.csproj",
         "projectName": "SalesSystemApi",
-        "projectPath": "/source/SalesSystemAPi/SalesSystemApi.csproj",
-        "packagesPath": "/root/.nuget/packages/",
-        "outputPath": "/source/SalesSystemAPi/obj/",
+        "projectPath": "/Users/pedrocapriles/Documents/projects/sales-system/csharp-sales-system-api/SalesSystemApi/SalesSystemApi.csproj",
+        "packagesPath": "/Users/pedrocapriles/.nuget/packages/",
+        "outputPath": "/Users/pedrocapriles/Documents/projects/sales-system/csharp-sales-system-api/SalesSystemApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/Users/pedrocapriles/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,6 +42,24 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlserver": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -66,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
         }
       }
     }
