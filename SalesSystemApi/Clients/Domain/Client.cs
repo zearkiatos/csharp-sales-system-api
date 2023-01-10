@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace SalesSystemApi.Client.Domain
+namespace SalesSystemApi.Clients.Domain
 {
     public class Client
     {
@@ -18,6 +18,7 @@ namespace SalesSystemApi.Client.Domain
             set { name = value; }
         }
 
+        [JsonProperty("id")]
         private int id;
         public int Id
         {

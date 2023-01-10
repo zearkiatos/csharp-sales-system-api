@@ -1,9 +1,8 @@
 using System;
-using SalesSystemApi.Database.Domain;
 using SalesSystemApi.Constants.Configuration;
 namespace SalesSystemApi.Database.Domain.MSSql
 {
-    public class MsSqlRelationalDatabase : RelationalDatabase
+    public class MsSqlRelationalDatabase
     {
         public string Server { get; set; }
         public string Database { get; set; }

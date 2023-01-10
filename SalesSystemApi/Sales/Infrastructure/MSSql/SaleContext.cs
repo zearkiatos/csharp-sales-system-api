@@ -1,14 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using SalesSystemApi.Product.Domain;
+using SalesSystemApi.Sales.Domain;
 using SalesSystemApi.Database.Domain.MSSql;
 
-namespace SalesSystemApi.Product.Infrastructure.Context
+namespace SalesSystemApi.Sales.Infrastructure.Context
 {
-    public class ConceptContext : DbContext
+    public class SaleContext : DbContext
     {
         private MsSqlRelationalDatabase database;
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Sale> Sales { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -17,16 +17,16 @@ namespace SalesSystemApi.Product.Infrastructure.Context
         }
 
 
-        protected override void OnModelCreating(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Concept>(entity =>
+            modelBuilder.Entity<Sale>(entity =>
             {
                 entity.HasKey(e => e.Id);
-                entity.Property(e => e.Name).IsRequired();
-                entity.Property(e => e.UnitPrice).IsRequired();
-                entity.Property(e => e.Cost).IsRequired();
+                entity.Property(e => e.Date).IsRequired();
+                entity.Property(e => e.Total).IsRequired();
+                entity.Property(e => e.ClientId).IsRequired();
             });
         }
     }

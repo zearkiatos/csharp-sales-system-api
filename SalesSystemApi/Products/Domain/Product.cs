@@ -1,7 +1,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace SalesSystemApi.Product.Domain
+namespace SalesSystemApi.Products.Domain
 {
     public class Product
     {
@@ -36,7 +36,7 @@ namespace SalesSystemApi.Product.Domain
         }
 
 
-
+        [JsonProperty("id")]
         private int id;
         public int Id
         {

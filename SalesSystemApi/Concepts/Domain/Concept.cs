@@ -1,7 +1,9 @@
 using System;
 using Newtonsoft.Json;
+using SalesSystemApi.Products.Domain;
+using SalesSystemApi.Sales.Domain;
 
-namespace SalesSystemApi.Concept.Domain
+namespace SalesSystemApi.Concepts.Domain
 {
     public class Concept
     {
@@ -53,11 +55,27 @@ namespace SalesSystemApi.Concept.Domain
             get { return productId; }
             set { productId = value; }
         }
-        
+        [JsonProperty("id")]
         private int id;
         public int Id
         {
             get { return id; }
+        }
+
+        [JsonProperty("products")]
+        private ICollection<Product> products;
+        public virtual ICollection<Product> Products
+        {
+            get { return products; }
+            set { products = value; }
+        }
+
+        [JsonProperty("sales")]
+        private ICollection<Sale> sales;
+        public virtual ICollection<Sale> Sales
+        {
+            get { return sales; }
+            set { sales = value; }
         }
 
 
